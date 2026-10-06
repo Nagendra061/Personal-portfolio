@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Nagendra Varma | Portfolio - Full-Stack Developer & Designer</title>
+    <meta name="description" content="Portfolio of Nagendra Varma - Passionate Web Developer & UI/UX Designer specializing in modern, responsive, high-performance web applications with React." />
+    <meta name="keywords" content="Nagendra Varma, Web Developer, React Developer, Frontend Engineer, UI/UX Designer, Portfolio, JavaScript, CSS3, Responsive Design" />
+    <meta name="author" content="Nagendra Varma" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nagendra Varma | Full-Stack Developer & Designer" />
+    <meta property="og:description" content="Showcasing modern web development projects, technical skills, and responsive UI engineering." />
+    <meta property="og:image" content="/images/hero.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Inline script to prevent theme flash (FOUC) -->
+    <script>
+      (function() {
+        try {
+          const savedTheme = localStorage.getItem("portfolio_theme_mode");
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add("dark");
+            document.documentElement.setAttribute("data-theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+          const savedColor = localStorage.getItem("portfolio_skin_color") || "crimson";
+          document.documentElement.setAttribute("data-skin", savedColor);
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-Iiy371Tq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DCRgUOcA.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
